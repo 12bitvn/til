@@ -1,0 +1,3 @@
+[submodule "themes/til"]
+	path = themes/til
+	url = git@github.com:12bitvn/hugo-til.git

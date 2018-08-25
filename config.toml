@@ -1,0 +1,14 @@
+baseURL = "https://til.12bit.vn/"
+languageCode = "vi-vn"
+title = "TIL"
+theme = "til"
+enableGitInfo = true
+[params]
+  description = "Little things learned everyday"
+  author = "12bit.vn"
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
