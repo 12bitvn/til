@@ -1,0 +1,35 @@
+baseURL = "https://tils.netlify.com"
+languageCode = "vi-vn"
+title = "TIL - 12bit.vn"
+theme = "hemingway"
+enableGitInfo = true
+disqusShortname = "shortname"
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = "UA-124810610-2"
+uglyURLs=true
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+
+[params]
+  description = "Little things learned everyday"
+  author = "12bit.vn"
+
+[[params.social]]
+    url = "https://github.com/12bitvn"
+    fa_icon = "fa-github"
+
+[[params.social]]
+    url = "https://12bit.vn"
+    fa_icon = "fa-globe"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[blackfriday]
+  hrefTargetBlank = true
