@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TIL - 12bit.vn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="masthead" class="site-header">
+      <div class="left">
+        <h1 class="site-title">
+          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h1>
+      </div>
+      <div class="right">
+        <nav class="site-navigation">
+          {{ range .Site.Params.menu }}
+          <a href="{{ .url }}">{{ .name }}</a>
+          {{ end }}
+          <a href="#" class="add-til">Add TIL</a>
+        </nav>
+      </div>
+    </header><!-- #masthead -->
