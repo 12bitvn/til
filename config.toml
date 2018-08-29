@@ -1,7 +1,7 @@
 baseURL = "https://tils.netlify.com"
 languageCode = "vi-vn"
 title = "TIL - 12bit.vn"
-theme = "hemingway"
+theme = "minitil"
 enableGitInfo = true
 disqusShortname = "shortname"
 enableEmoji = true
