@@ -1,0 +1,3 @@
+[submodule "themes/minital"]
+	path = themes/minital
+	url = https://github.com/12bitvn/minitil.git
