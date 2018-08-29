@@ -13,16 +13,16 @@ uglyURLs=true
   description = "Little things learned everyday"
   author = "12bit.vn"
 
+[params.cta]
+  name = "Add TIL"
+  url = "/pages/contribute.html"
+
 [[params.menu]]
   name = "Home"
-  weight = 1
-  identifier = "home"
   url = "/"
 
 [[params.menu]]
   name = "About"
-  weight = 1
-  identifier = "about"
   url = "/pages/about.html"
 
 [[params.social]]
@@ -32,10 +32,6 @@ uglyURLs=true
 [[params.social]]
     url = "https://12bit.vn"
     fa_icon = "fa-globe"
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
 
 [blackfriday]
   hrefTargetBlank = true
