@@ -9,15 +9,21 @@ enableRobotsTXT = true
 googleAnalytics = "UA-124810610-2"
 uglyURLs=true
 
-[[menu.main]]
+[params]
+  description = "Little things learned everyday"
+  author = "12bit.vn"
+
+[[params.menu]]
   name = "Home"
   weight = 1
   identifier = "home"
   url = "/"
 
-[params]
-  description = "Little things learned everyday"
-  author = "12bit.vn"
+[[params.menu]]
+  name = "About"
+  weight = 1
+  identifier = "about"
+  url = "/pages/about.html"
 
 [[params.social]]
     url = "https://github.com/12bitvn"
