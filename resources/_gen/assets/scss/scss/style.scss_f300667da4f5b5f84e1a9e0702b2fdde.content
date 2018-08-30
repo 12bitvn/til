@@ -1,0 +1,133 @@
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-display: auto;
+  color: #2c2c2c; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700; }
+
+a {
+  text-decoration: none;
+  color: rgba(44, 44, 44, 0.5); }
+  a:hover {
+    color: #2c2c2c; }
+
+.heart {
+  color: red; }
+
+#wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative; }
+
+/***** HEADER *****/
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0; }
+  #masthead .site-title {
+    font-size: 32px;
+    font-size: 2rem; }
+    #masthead .site-title a {
+      color: #2c2c2c; }
+  #masthead .site-desc {
+    font-weight: 400; }
+  #masthead .site-navigation a {
+    margin-left: 10px; }
+  #masthead .site-navigation .cta {
+    border: 2px solid #1C9963;
+    color: #1C9963;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-weight: 700; }
+    #masthead .site-navigation .cta:hover {
+      color: #fff;
+      background-color: #1C9963; }
+
+.site-content--pages .article__title {
+  font-size: 32px;
+  font-size: 2rem; }
+  .site-content--pages .article__title:before {
+    content: '#';
+    margin-right: 10px;
+    color: rgba(44, 44, 44, 0.5); }
+
+/***** ARTICLE ITEM *****/
+.article {
+  margin: 3rem 0;
+  /** Modify **/ }
+  .article:first-child {
+    margin-top: 0; }
+  .article__title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 10px; }
+    .article__title a {
+      color: #2c2c2c; }
+  .article__intro {
+    color: rgba(44, 44, 44, 0.5); }
+  .article__content p {
+    margin: 1rem 0; }
+  .article__content ol li, .article__content ul li {
+    margin-bottom: 10px; }
+  .article__content ol {
+    list-style: numeric; }
+  .article__content ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 10px; }
+    .article__content ul li:before {
+      content: '-';
+      margin-right: 10px; }
+  .article__content strong {
+    font-weight: 700; }
+  .article__content em {
+    font-style: italic; }
+  .article__content code, .article__content pre {
+    font-family: "Roboto Mono", monospace;
+    background-color: rgba(44, 44, 44, 0.15); }
+  .article__content a {
+    color: #1C9963; }
+    .article__content a:hover {
+      background-color: #1C9963;
+      color: #fff; }
+    .article__content a:after {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='i-external' viewBox='0 0 32 32' width='14' height='14' fill='none' stroke='rgba(44, 44, 44, 0.5)' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.38%'%3E%3Cpath d='M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18'/%3E%3C/svg%3E");
+      margin-left: 5px;
+      position: relative;
+      top: -2px; }
+  .article__content h1:before, .article__content h2:before {
+    color: rgba(44, 44, 44, 0.5);
+    margin-right: 5px; }
+  .article__content h1:before {
+    content: '#'; }
+  .article__content h2:before {
+    content: '##'; }
+  .article--til .article__content ol, .article--til .article__content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .article--til .article__content ol li:before, .article--til .article__content ul li:before {
+      content: '-';
+      margin-right: 10px; }
+
+/***** FOOTER *****/
+#colophon {
+  padding: 2rem 0;
+  margin-top: 4rem;
+  font-family: "Roboto Mono", sans-serif;
+  border-top: 1px solid rgba(44, 44, 44, 0.5); }
+  #colophon p {
+    margin: 0; }
+  #colophon .main-domain {
+    color: #1C9963; }
