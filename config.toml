@@ -1,6 +1,6 @@
 baseURL = "https://tils.netlify.com"
 languageCode = "vi-vn"
-title = "TIL - 12bit.vn"
+title = "Today I Learned"
 theme = "minitil"
 enableGitInfo = true
 disqusShortname = "shortname"
