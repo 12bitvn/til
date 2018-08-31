@@ -8,6 +8,7 @@ enableEmoji = true
 enableRobotsTXT = true
 googleAnalytics = "UA-124810610-2"
 uglyURLs=true
+paginate=20
 
 [params]
   description = "Little things learned everyday"
