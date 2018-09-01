@@ -1,4 +1,4 @@
-baseURL = "https://tils.netlify.com"
+baseURL = "https://til.12bit.vn"
 languageCode = "vi-vn"
 title = "Today I Learned"
 theme = "minitil"
@@ -10,29 +10,35 @@ googleAnalytics = "UA-124810610-2"
 uglyURLs=true
 paginate=20
 
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/pages/about.html"
+
+  [[menu.main]]
+    identifier = "github"
+    name = "Github"
+    title = "Github"
+    url = "https://github.com/12bitvn"
+
 [params]
   description = "Little things learned everyday"
   author = "12bit.vn"
 
-[params.cta]
-  name = "Add TIL"
-  url = "/pages/contribute.html"
+  [params.cta]
+    name = "Add TIL"
+    url = "/pages/contribute.html"
 
-[[params.menu]]
-  name = "Home"
-  url = "/"
+  [[params.social]]
+      url = "https://github.com/12bitvn"
+      fa_icon = "fa-github"
 
-[[params.menu]]
-  name = "About"
-  url = "/pages/about.html"
-
-[[params.social]]
-    url = "https://github.com/12bitvn"
-    fa_icon = "fa-github"
-
-[[params.social]]
-    url = "https://12bit.vn"
-    fa_icon = "fa-globe"
+  [[params.social]]
+      url = "https://12bit.vn"
+      fa_icon = "fa-globe"
 
 [blackfriday]
   hrefTargetBlank = true
