@@ -1,7 +1,7 @@
 baseURL = "https://til.12bit.vn"
 languageCode = "vi-vn"
 title = "Today I Learned"
-theme = "minitil"
+theme = "til"
 enableGitInfo = true
 disqusShortname = "shortname"
 enableEmoji = true

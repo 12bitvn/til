@@ -1,0 +1,11 @@
+{{ partial "header" . }}
+<div id="content" class="site-content site-content--{{ .Type }}">
+  <article class="article article--{{ .Type }}">
+    <h1 class="article__title">{{ .Title }}</h1>
+    <div class="article__content">
+      {{ .Content }}
+    </div>
+  </article>
+</div><!-- #content -->
+{{ partial "comment" . }}
+{{ partial "footer" . }}
