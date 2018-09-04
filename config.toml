@@ -10,6 +10,20 @@ googleAnalytics = "UA-124810610-2"
 uglyURLs=true
 paginate=20
 
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "permalink"]
+params = ["tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
 [menu]
 
   [[menu.main]]
