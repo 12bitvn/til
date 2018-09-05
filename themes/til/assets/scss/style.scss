@@ -122,6 +122,7 @@ a[target="_blank"] {
   &__title {
     @include font-size(1.5);
     margin-bottom: 10px;
+    font-weight: $font-weight-normal;
     a {
       color: $color-dark;
     }
