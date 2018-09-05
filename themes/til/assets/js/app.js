@@ -55,23 +55,33 @@ const algoliaLogo = document.createElement('img')
 algoliaLogo.src = 'https://www.algolia.com/static_assets/images/pricing/pricing_new/algolia-powered-by-14773f38.svg'
 algoliaLogo.classList.add('algolia-logo')
 
-search.on('render', function () {
+search.on('render', () => {
   resultPanel.appendChild(algoliaLogo)
+
+  // Format date as dd/mm/yyyy
+  let itemTitle = document.querySelectorAll('#hits .title')
+  itemTitle.forEach((item) => {
+    let text = item.textContent
+    let date = text.split('-')
+    if (date.length !== 3) {
+      return
+    }
+    let d = date[2]
+    let m = date[1]
+    let y = date[0]
+    item.textContent = `${d}/${m}/${y}`
+  })
 })
 
 search.start();
 
 const searchBox = document.querySelector('#search-box input')
 
-const hideResultPanel = function () {
-  resultPanel.style.display = 'none'
-}
+const hideResultPanel = () => resultPanel.style.display = 'none'
 
-const showResultPanel = function () {
-  resultPanel.style.display = 'block'
-}
+const showResultPanel = () => resultPanel.style.display = 'block'
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', (e) => {
   if (!resultPanel.contains(e.target) && e.target !== searchBox) {
     hideResultPanel()
   }
@@ -79,6 +89,6 @@ document.addEventListener('click', function (e) {
 
 searchBox.addEventListener('focus', hideResultPanel)
 
-searchBox.addEventListener('input', function (e) {
+searchBox.addEventListener('input', (e) => {
   searchBox.value.trim() === '' ? hideResultPanel() : showResultPanel()
 })
