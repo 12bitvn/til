@@ -190,6 +190,10 @@ a[target="_blank"] {
     h2:before {
       content: '##'
     }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
   &--til {
     .article__content {
