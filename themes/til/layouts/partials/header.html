@@ -62,7 +62,7 @@
 {{ partial "seo_schema" . }}
 </head>
 
-<body>
+<body class="light">
   <div id="wrap">
     <header id="masthead" class="site-header">
       <div class="left">
@@ -82,6 +82,13 @@
         {{ $currentPage := . }}
         <nav class="site-navigation">
           <ul>
+            <li class="switch-theme-wrap">
+              <a href="#" class="switch-theme"></a>
+              <ul class="list-theme">
+                <li><a href="" class="light switch-theme-item" data-theme="light"></a></li>
+                <li><a href="" class="dark switch-theme-item" data-theme="dark"></a></li>
+              </ul>
+            </li>
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
               {{ if .HasChildren }}
