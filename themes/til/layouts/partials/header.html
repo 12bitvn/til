@@ -56,7 +56,7 @@
 {{ end }}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
   {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalinkgit }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ partial "seo_schema" . }}
 </head>
 
