@@ -3,10 +3,9 @@ WebFont.load({
   google: {
     families: ['Roboto+Mono:400,700']
   }
-});
+})
 
 // Switch Theme
-const switchThemeItem = document.querySelectorAll('.switch-theme-item')
 const body = document.querySelector('body')
 const themes = ['light', 'dark']
 
@@ -17,13 +16,9 @@ if (themes.indexOf(theme) === -1) {
 
 window.addEventListener('DOMContentLoaded', () => {
   body.className = theme
-})
-
-switchThemeItem.forEach(item => {
-  item.addEventListener('click', (e) => {
+  document.getElementById('switch-theme').addEventListener('click', (e) => {
     e.preventDefault()
-    let target = e.currentTarget
-    let theme = target.dataset.theme
+     theme = theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', theme)
     body.className = theme
   })
