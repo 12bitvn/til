@@ -30,6 +30,7 @@ body {
   font-display: auto;
   background-color: var(--bg);
   color: var(--color);
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
   @include breakpoint(tablet) {
     font-size: 16px;
   }
@@ -48,6 +49,7 @@ h6 {
 a {
   text-decoration: none;
   color: var(--linkColor);
+  transition: color .2s ease-in-out;
   &:hover {
     color: var(--linkColorHover);
   }
@@ -374,12 +376,13 @@ a[target="_blank"] {
 }
 
 /** Switch Theme **/
-.switch-theme, .list-theme li a {
+.switch-theme{
   display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 2px solid $color-primary;
+  background-color: var(--color);
 }
 
 .site-header .site-navigation .list-theme {
@@ -410,12 +413,5 @@ a[target="_blank"] {
   }
   .dark {
     background-color: $color-dark;
-  }
-}
-
-.switch-theme-wrap {
-  position: relative;
-  &:hover .list-theme {
-    display: flex;
   }
 }

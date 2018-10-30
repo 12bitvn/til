@@ -81,11 +81,7 @@
         <nav class="site-navigation">
           <ul>
             <li class="switch-theme-wrap">
-              <a href="#" class="switch-theme"></a>
-              <ul class="list-theme">
-                <li><a href="" class="light switch-theme-item" data-theme="light"></a></li>
-                <li><a href="" class="dark switch-theme-item" data-theme="dark"></a></li>
-              </ul>
+              <a href="#" id="switch-theme" class="switch-theme"></a>
             </li>
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
