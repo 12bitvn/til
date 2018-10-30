@@ -203,7 +203,8 @@ a[target="_blank"] {
     }
     h1, h2 {
       &:before {
-        color: $color-light;
+        color: var(--color);
+        opacity: .5;
         margin-right: 5px;
       }
     }
@@ -243,7 +244,6 @@ a[target="_blank"] {
     &:before {
       content: '#';
       margin-right: 10px;
-      color: $color-light;
     }
   }
 }

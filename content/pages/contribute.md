@@ -10,7 +10,7 @@ Bạn cần phải có kiến thức cơ bản về git và biết sử dụng g
 
 ## Các bước để contribute
 
-1. Fork repo nếu bạn chưa có.
+1. Fork [repo](https://github.com/12bitvn/til) nếu bạn chưa có.
 1. Nếu chưa có file cho ngày mà bạn cần contribute thì dùng lệnh `hugo new til/2018-08-12.md`
 1. Chèn item của bạn vào bên dưới cùng của file.
 1. Commit, push và tạo pull request
