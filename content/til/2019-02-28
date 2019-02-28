@@ -3,4 +3,4 @@ title: "2019-02-28"
 date: 2019-02-28T13:06:49+07:00
 ---
 
-1. Golang có hàm AddDate mà không có hàm SubDate. Nhưng có thể SubDate bằng cách dùng sô âm
+1. Golang có hàm `AddDate` mà không có hàm `SubDate`. Nhưng có thể `SubDate` bằng cách dùng sô âm.
