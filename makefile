@@ -1,2 +1,2 @@
 build:
-	hugo  --gc --minify --buildFuture --enableGitInfo && yarn run precache
+	hugo  --gc --minify --buildFuture --enableGitInfo
