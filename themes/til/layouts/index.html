@@ -1,5 +1,6 @@
 {{ partial "header" . }}
-{{ $paginator := .Paginate (where .Pages "Type" "til") }}
+{{ $pages := where .Site.RegularPages "Type" "til" }}
+{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 <div id="content" class="site-content">
   <div class="tils">
     {{ range $paginator.Pages }}
