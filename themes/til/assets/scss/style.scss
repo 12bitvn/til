@@ -12,7 +12,7 @@
   --newTabIcon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' class='i-external' viewBox='0 0 32 32' width='14' height='14' fill='none' stroke='#ccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.38%'><path d='M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18'/></svg>")
 }
 .dark {
-  --bg: #222831;
+  --bg: #1a1f23;
   --color: #ccc;
   --linkColor: #ccc;
   --linkColorHover: #fff;
@@ -31,9 +31,6 @@ body {
   background-color: var(--bg);
   color: var(--color);
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
-  @include breakpoint(tablet) {
-    font-size: 16px;
-  }
 }
 
 h1,
@@ -83,26 +80,30 @@ a[target="_blank"] {
 /***** HEADER *****/
 .site-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
   flex-flow: column;
+  text-align: center;
+  border-bottom: 1px solid $color-light;
   @include breakpoint(tablet) {
-    padding: 2rem 0;
     flex-flow: row;
+    text-align: left;
+  }
+  .site-logo {
+    display: block;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    @include breakpoint(tablet) {
+      margin-bottom: 0;
+    }
   }
   .site-title {
-    @include font-size(1.8);
-    margin: 10px 0;
-    @include breakpoint(tablet) {
-      margin: 0;
-    }
-    a {
-      color: var(--siteHeaderColor)
-    }
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
   }
   .site-desc {
-    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    margin: 0;
   }
   .site-navigation {
     ul{
@@ -185,7 +186,7 @@ a[target="_blank"] {
     }
     code, pre {
       font-family: $font-monospace;
-      font-size: 14px;
+      font-size: 16px;
       background-color: var(--codeBg);
       padding: 0 10px 3px;
       border-radius: 4px;

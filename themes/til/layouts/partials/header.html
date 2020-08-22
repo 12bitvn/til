@@ -61,59 +61,27 @@
   <link rel="manifest" href="/manifest.json">
 </head>
 
-<body class="light">
+<body class="dark">
   <div id="wrap">
     <header id="masthead" class="site-header">
       <div class="left">
-        {{ if .IsPage }}
-        <h2 class="site-title">
-        {{ else }}
-        <h1 class="site-title">
-        {{ end }}
-          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-        {{ if .IsPage }}
-        </h2>
-        {{ else }}
-        </h1>
-        {{ end }}
+        <a href="/" class="site-logo">
+          <svg width="120" height="120" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="400" rx="65" fill="#0cc387"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M311.377 112.106H334V136.5H311.377V169.606H334V194H287.013V169.606V89.4546H311.377V112.106Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M252.208 112.106H276.571V194H252.208V112.106ZM252.208 79H276.571V103.394H252.208V79Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M241.766 136.5V169.606V194H182.597V169.606V79H206.961V112.106H241.766V136.5ZM217.403 136.5H206.961V169.606H217.403V136.5Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M137.351 169.606H172.156V194H137.351H112.987V124.303H137.351H147.792V103.394H112.987V79H172.156V103.394V148.697H147.792H137.351V169.606Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M102.545 103.394V194H78.1818V103.394H66V79H102.545V103.394Z" fill="white"/>
+            <rect x="66" y="219" width="268" height="103" rx="51.5" fill="#1A2023"/>
+            <path d="M181.8 252.3H160.3V305H143.1V252.3H121.5V239H181.8V252.3ZM208.832 305H191.632V239H208.832V305ZM273.768 291.7V305H223.468V239H240.668V291.7H273.768Z" fill="white"/>
+          </svg>
+        </a>    
       </div>
       <div class="right">
+        <h1 class="site-title">Today I Learned</h1>
+        <p class="site-desc">Đây là trang giúp bạn ý thức về những điều mới mẻ đã xảy ra với bạn, đồng thời hỗ trợ bạn chia sẻ nó với những người khác.</p>
         {{ $currentPage := . }}
-        <nav class="site-navigation">
-          <ul>
-            <li class="switch-theme-wrap">
-              <a href="#" id="switch-theme" class="switch-theme"></a>
-            </li>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-              {{ if .HasChildren }}
-              <li class="site-navigation__item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-              <a href="#">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-              </a>
-              </li>
-              <ul class="sub-menu">
-                {{ range .Children }}
-                <li class="site-navigation__item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                  <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-              </ul>
-              {{ else }}
-              <li class="site-navigation__item">
-                <a href="{{ .URL }}">
-                  {{ .Pre }}
-                  <span>{{ .Name }}</span>
-                </a>
-              </li>
-              {{ end }}
-            {{ end }}
-            <li class="site-navigation__item">
-              <a href="{{ .Site.Params.cta.url }}" class="cta">{{ .Site.Params.cta.name }}</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header><!-- #masthead -->
 
