@@ -190,7 +190,12 @@ a[target="_blank"] {
       background-color: var(--codeBg);
       padding: 0 10px 3px;
       border-radius: 4px;
-      white-space: nowrap;
+    }
+    pre {
+      code {
+        background-color: transparent;
+        padding: 0;
+      }
     }
     a {
       color: $color-primary;
